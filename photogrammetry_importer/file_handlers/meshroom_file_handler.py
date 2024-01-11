@@ -137,10 +137,10 @@ class MeshroomFileHandler:
             #   scene_v1.2.3.json
             #   scene_v1.2.4.json
 
-            if alicevision_sfm_data_version >= (1, 2, 6):
-                raise NotImplementedError(
-                    f"support for alicevision sfm data version: {alicevision_sfm_data_version}"
-                )
+            #if alicevision_sfm_data_version >= (1, 2, 6):
+            #    raise NotImplementedError(
+            #        f"support for alicevision sfm data version: {alicevision_sfm_data_version}"
+            #    )
 
             if alicevision_sfm_data_version >= (1, 2, 2):
                 # Focal lenght in mm
