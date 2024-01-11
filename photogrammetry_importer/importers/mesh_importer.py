@@ -17,7 +17,7 @@ class MeshImporter:
         " Only relevant for files/folders referencing/containing mesh files"
         " (such as *.mg files of Meshroom or dense Colmap folders)."
         " Note that Blenders build-in ply- and obj-importer are quite slow",
-        default=False,
+        default=True,
     )
 
     add_mesh_color_emission: BoolProperty(

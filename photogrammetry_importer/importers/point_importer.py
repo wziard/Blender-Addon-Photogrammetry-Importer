@@ -40,7 +40,7 @@ class PointImporter:
         description="Draw Points in the 3D View. Allows to visualize point "
         "clouds with many elements. These are not visible in eevee/cycles "
         "renderings.",
-        default=True,
+        default=False,
     )
     add_points_to_point_cloud_handle: BoolProperty(
         name="Add point data to the point cloud handle.",
@@ -59,13 +59,13 @@ class PointImporter:
         name="Add Points as Mesh Object",
         description="Use a mesh object to represent the point cloud with the "
         "vertex positions.",
-        default=False,
+        default=True,
     )
     add_mesh_to_point_geometry_nodes: BoolProperty(
         name="Add Geometry Nodes",
         description="Add Geometry Nodes to allow rendering of the point cloud "
         "with Blender's built-in renderers (Eevee / Cycles).",
-        default=True,
+        default=False,
     )
     point_radius: FloatProperty(
         name="Initial Point Radius",

@@ -29,7 +29,7 @@ class CameraImporter:
         description="If selected, use the (undistorted) images in the"
         " workspace (if available). Otherwise use the images in the default"
         " image path.",
-        default=True,
+        default=False,
     )
 
     image_fp_items = [
@@ -56,7 +56,7 @@ class CameraImporter:
         default="",
     )
     import_cameras: BoolProperty(
-        name="Import Cameras", description="Import Cameras", default=True
+        name="Import Cameras", description="Import Cameras", default=False
     )
     default_width: IntProperty(
         name="Default Width",
@@ -95,7 +95,7 @@ class CameraImporter:
         name="Add a Background Image for each Camera",
         description="The background image is only visible by viewing the "
         "scene from a specific camera",
-        default=True,
+        default=False,
     )
     add_image_planes: BoolProperty(
         name="Add an Image Plane for each Camera",
@@ -171,7 +171,7 @@ class CameraImporter:
         name="Add Background Images for the Animated Camera",
         description="The background images are only visible by viewing the "
         "scene from the animated camera at the corresponding time step",
-        default=True,
+        default=False,
     )
     reorganize_undistorted_images: BoolProperty(
         name="Reorganize Undistorted Workspace Images",
@@ -182,7 +182,7 @@ class CameraImporter:
         " images as background sequence for the animated camera."
         " WARNING: This will write a copy of the corresponding images to the"
         " workspace directory",
-        default=True,
+        default=False,
     )
     number_interpolation_frames: IntProperty(
         name="Number of Frames Between two Reconstructed Cameras",
@@ -219,7 +219,7 @@ class CameraImporter:
         "C, but only A and C have been reconstructed. This option "
         "adjusts the frame number of C and the number of interpolation "
         "frames between camera A and C",
-        default=True,
+        default=False,
     )
 
     remove_rotation_discontinuities: BoolProperty(
@@ -236,7 +236,7 @@ class CameraImporter:
         "of cameras and points. Enable this option to suppress "
         "corresponding warnings. If possible, consider to re-compute the "
         "reconstruction using a camera model without radial distortion",
-        default=False,
+        default=True,
     )
 
     adjust_render_settings: BoolProperty(
